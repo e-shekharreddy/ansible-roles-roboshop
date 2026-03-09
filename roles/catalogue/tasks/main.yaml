@@ -1,9 +1,14 @@
 - name: app setup
+  tags:
+  - deployment
   ansible.builtin.import_role:
     name: common
     tasks_from: app-setup.yaml
 
 - name: nodejs setup
+  tags:
+  - deployment:
+  # ansible.builtin.include_role:    which is not respect the tags so its skip the tags
   ansible.builtin.import_role:
     name: common
     tasks_from: nodejs-setup.yaml
