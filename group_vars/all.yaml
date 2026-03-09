@@ -1,3 +1,12 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
 
+MONGODB_HOST: mongodb-dev.tsmvr.fun
+CATALOGUE_HOST: catalogue-dev.tsmvr.fun
+REDIS_HOST: redis-dev.tsmvr.fun
+USER_HOST: user-dev.tsmvr.fun
+CART_HOST: cart-dev.tsmvr.fun
+MYSQL_HOST: mysql-dev.tsmvr.fun
+SHIPPING_HOST: shipping-dev.tsmvr.fun
+RABBITMQ_HOST: rabbitmq-dev.tsmvr.fun
+PAYMENT_HOST: payment-dev.tsmvr.fun
