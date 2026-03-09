@@ -1,11 +1,11 @@
 - name: Create a system user 
   ansible.builtin.user:
-      name: roboshop
-      comment: "roboshop system user" 
-      home: /app        
-      shell: /sbin/nologin  
-      system: yes           
-      state: present
+    name: roboshop
+    comment: "roboshop system user" 
+    home: /app        
+    shell: /sbin/nologin  
+    system: yes           
+    state: present
 
 - name: delete app directory # deleting before creating bcz if developer change the code 
   ansible.builtin.file:

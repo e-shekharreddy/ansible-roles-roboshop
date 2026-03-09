@@ -1,4 +1,4 @@
-- name: copying {{ component }} service file
+- name: copying {{ component }} service template
   ansible.builtin.template:
     src: "{{ component }}.service.j2"
     dest: /etc/systemd/system/{{ component }}.service

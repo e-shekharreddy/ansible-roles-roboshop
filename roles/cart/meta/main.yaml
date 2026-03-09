@@ -1,0 +1,3 @@
+dependencies:
+# cart is depends on common
+- role: common
