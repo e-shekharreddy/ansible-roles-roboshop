@@ -7,7 +7,7 @@
 
 - name: nodejs setup
   tags:
-  - deployment:
+  - deployment
   # ansible.builtin.include_role:    which is not respect the tags so its skip the tags
   ansible.builtin.import_role:
     name: common
