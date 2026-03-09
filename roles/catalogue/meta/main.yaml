@@ -1,0 +1,3 @@
+dependencies:
+# catalogue is depends on common
+- role: common
