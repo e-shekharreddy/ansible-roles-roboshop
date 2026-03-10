@@ -1,3 +1,4 @@
+# ansible-playbook -e component=rabbitmq roboshop.yaml 
 - name: "Configure {{ component }} server" 
   hosts: "{{ component }}"
   become: yes
