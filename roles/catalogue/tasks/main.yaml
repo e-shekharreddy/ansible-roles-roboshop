@@ -1,9 +1,12 @@
 - name: app setup
+  tags:
+  - deployment # if i wnat t o run spectific tak=sk the we use tags for that in command we use -t deployment 
   ansible.builtin.import_role:
     name: common
     tasks_from: app-setup.yaml
 
-- name: nodejs setup
+- name: nodejs setup 
+  # ansible.builtin.include_role:  if we use this command its not respecting the tags
   ansible.builtin.import_role:
     name: common
     tasks_from: nodejs-setup.yaml
