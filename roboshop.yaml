@@ -1,4 +1,4 @@
-# ansible-playbook -e component=rabbitmq roboshop.yaml 
+# ansible-playbook -e component=mongodb roboshop.yaml ; ansible-playbook -e component=catalogue roboshop.yaml ; ansible-playbook -e component=redis roboshop.yaml ; ansible-playbook -e component=user roboshop.yaml ; ansible-playbook -e component=cart roboshop.yaml ; ansible-playbook -e component=mysql roboshop.yaml ; ansible-playbook -e component=shipping roboshop.yaml ; ansible-playbook -e component=rabbitmq roboshop.yaml ; ansible-playbook -e component=payment roboshop.yaml ; ansible-playbook -e component=frontend roboshop.yaml ;
 - name: "Configure {{ component }} server" 
   hosts: "{{ component }}"
   become: yes
