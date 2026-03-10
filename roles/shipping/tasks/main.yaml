@@ -13,11 +13,7 @@
     name: common
     tasks_from: systemd-setup.yaml
 
-- name: enable and start shipping
-  ansible.builtin.service:
-    name: shipping
-    state: started
-    enabled: yes 
+
 
 - name: installing mysql client # we loop this at top in install maven task
   ansible.builtin.dnf:
