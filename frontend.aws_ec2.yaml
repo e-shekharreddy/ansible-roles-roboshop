@@ -1,10 +1,10 @@
 plugin: amazon.aws.aws_ec2
 regions:
-  - us-east-1
-
+  - us-east-1   # Ansible > DYNAMIC INVENTORY concept go check timestamps 'my discussions'
+                # ansible-playbook -i frontend.aws_ec2.yaml --list < this is command
 # hostnames:
 # - ip-address
-# - public-ip-address  
+# - private-ip-address  
 
 
 # filters:
@@ -17,4 +17,6 @@ regions:
 
 # keyed_groups:
 # - separetor: ''
-#   key: tags.Component  # we must use the tags while creating the servers then its easy to search
+#   key: tags.Component  
+
+# we must use the tags while creating the servers then its easy to search
