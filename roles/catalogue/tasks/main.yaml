@@ -13,6 +13,12 @@
     name: common
     tasks_from: systemd-setup.yaml
 
+- name: Enable and start catalogue
+  ansible.builtin.service:
+    name: catalogue
+    state: started
+    enabled: true
+
 
 - name: copying mongo.repo
   ansible.builtin.copy:
@@ -33,9 +39,3 @@
   ansible.builtin.shell: mongosh --host "{{ MONGODB_HOST }}" </app/db/master-data.js
   when: catalogue_output.stdout | int < 0
 
-- name: Enable and start catalogue
-  ansible.builtin.service:
-    name: catalogue
-    state: restarted
-    enabled: true
-  
