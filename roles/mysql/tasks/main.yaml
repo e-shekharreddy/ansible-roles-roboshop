@@ -7,7 +7,7 @@
 - name: enable and start mysqld
   ansible.builtin.service:
     name: mysqld
-    state: restarted
+    state: started
     enabled: yes
 
 - name: Set root password roboshop
